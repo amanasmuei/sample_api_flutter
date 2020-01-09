@@ -44,8 +44,8 @@ class _LoginState extends State<Login> {
     if (token == "1") {
       //final decodedtoken = jsonDecode(token);
       //print(decodedtoken['token']);
-      _hideLoading();
       Navigator.pushNamed(context, '/home');
+      _hideLoading();
     } else {
       print('authentication failed');
     }
